@@ -1,11 +1,54 @@
+<!DOCTYPE html>
 <html>
-  <body>
-<h1>Circuito com botões</h1>
-<p>Na aula 6 foi montado um circuito com botão, resistor, led, arduino, protoboard e jumpers, onde fizemos o led ligar quando pressione o botão. Essa aula colocarei ela em um site que estamos desenvolvendo, logo, produza uma aula com esse circuito e coloque as seguintes imagens: circuito virtual (produzido no tinkercad), circuito físico (produzido com os componentes elétricos, circuito simulado (produzido na plataforma Falstd), imagem do código em blocos, e código em texto na linguagem C#. Explique tudo em uma página em html, somente o código em html e sem estilização em CSS</p>
-<h1>Circuito virtual</h1>
-<img src= "https://i.pinimg.com/736x/b4/4f/de/b44fde5b14478cb9e584d752bfa4e2ce.jpg" width= "500">
-<iframe width="560" height="315" 
-<img src= "https://i.pinimg.com/736x/f6/b8/9d/f6b89db501012cbb835c989685739f70.jpg" width= "500">
-<iframe width="560" height="315"
+<head>
+  <title>Enfeitando o Caderno Digital</title>
+</head>
+<body>
+
+<h1>Circuito com Botões</h1>
+<p>Na aula 6 foi montado um circuito com botão, resistor, LED, Arduino, protoboard e jumpers, onde fizemos o LED ligar quando o botão foi pressionado. Nesta aula, colocarei a explicação sobre o circuito em um site que estamos desenvolvendo, apresentando o circuito virtual, físico, simulado, além de códigos em blocos e texto na linguagem C#.</p>
+
+<h2>Circuito Virtual</h2>
+<img src="https://i.pinimg.com/736x/b4/4f/de/b44fde5b14478cb9e584d752bfa4e2ce.jpg" width="800">
+
+<h2>Circuito Físico</h2>
+<img src="https://i.pinimg.com/736x/f6/b8/9d/f6b89db501012cbb835c989685739f70.jpg" width="800">
+
+<h2>Circuito Simulado</h2>
+<iframe width="800" height="450" src="https://falstad.com/circuit/circuitjs.html"></iframe>
+
+<h2>Código em Blocos</h2>
+<p>Imagem do código em blocos para o circuito:</p>
+<img src="URL_DA_IMAGEM_DO_CODIGO_EM_BLOCOS" width="800">
+
+<h2>Código em Texto (C#)</h2>
+<p>Código em texto na linguagem C#:</p>
+<pre>
+Código C# para o circuito:
+using System;
+using System.Threading.Tasks;
+
+namespace CircuitoBotao
+{
+    class Program
+    {
+        static async Task Main(string[] args)
+        {
+            Console.WriteLine("Pressione o botão para acender o LED.");
+            while (true)
+            {
+                if (Console.ReadKey().Key == ConsoleKey.Enter)
+                {
+                    Console.WriteLine("LED aceso!");
+                }
+                await Task.Delay(100);
+            }
+        }
+    }
+}
+</pre>
+
+</body>
+</html>
 
 
