@@ -1,30 +1,11 @@
-/**
- * Template Name: Personal
- * Template URL: https://bootstrapmade.com/personal-free-resume-bootstrap-template/
- * Updated: Mar 17 2024 with Bootstrap v5.3.3
- * Author: BootstrapMade.com
- * License: https://bootstrapmade.com/license/
- */
-
-/*--------------------------------------------------------------
-# General
---------------------------------------------------------------*/
-body {
-    font-family: "Open Sans", sans-serif; /* Define a fonte principal */
-    background-color: #040404; /* Define a cor de fundo preta escura */
-    color: #fff; /* Define a cor de texto branca */
-    position: relative; /* Define posição relativa */
-    background: transparent; /* Define fundo transparente */
-}
-
 body::before {
-    content: ""; /* Define conteúdo vazio para o pseudo-elemento */
-    position: fixed; /* Define posição fixa */
-    background: #040404 url('https://i.pinimg.com/originals/d4/ae/74/d4ae745535b8d9df951247bf91416f76.jpg') top right no-repeat; /* Define o fundo preto com a imagem */
-    background-size: cover; /* Ajusta a imagem para cobrir toda a área do elemento */
-    left: 0; /* Define a posição à esquerda */
-    right: 0; /* Define a posição à direita */
-    top: 0; /* Define a posição no topo */
-    height: 100vh; /* Define a altura para cobrir toda a altura da visualização */
-    z-index: -1; /* Define z-index para manter o pseudo-elemento atrás do conteúdo principal */
+  content: "";
+  position: fixed;
+  background: #040404 url https://i.pinimg.com/originals/d4/ae/74/d4ae745535b8d9df951247bf91416f76.jpg top right no-repeat;
+  background-size: cover;
+  left: 0;
+  right: 0;
+  top: 0;
+  height: 100vh;
+  z-index: -1;
 }
