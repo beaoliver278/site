@@ -10,22 +10,21 @@
 # General
 --------------------------------------------------------------*/
 body {
-  font-family: "Open Sans", sans-serif; /* Define a fonte principal e a alternativa */
-  background-color: #040404; /* Define a cor de fundo do corpo (preta escura) */
-  color: #fff; /* Define a cor do texto (branca) */
-  position: relative; /* Define a posição relativa */
-  background: transparent; /* Define o fundo como transparente */
+    font-family: "Open Sans", sans-serif; /* Define a fonte principal */
+    background-color: #040404; /* Define a cor de fundo preta escura */
+    color: #fff; /* Define a cor de texto branca */
+    position: relative; /* Define posição relativa */
+    background: transparent; /* Define fundo transparente */
 }
 
 body::before {
-  content: ""; /* Define conteúdo vazio para o pseudo-elemento ::before */
-  position: fixed; /* Define a posição fixa para o pseudo-elemento */
-  background: #040404 url(https://i.pinimg.com/736x/20/bf/26/20bf2652e0dabd693d0facc8414be21d.jpg) top right no-repeat;
-  /* Define o fundo com uma cor preta e uma imagem de fundo com posição, repetição e ajuste */
-  background-size: cover; /* Ajusta a imagem para cobrir toda a área do elemento */
-  left: 0;
-  right: 0;
-  top: 0;
-  height: 100vh; /* Define a altura para cobrir toda a janela de visualização */
-  z-index: -1; /* Coloca o pseudo-elemento atrás de todos os outros elementos */
+    content: ""; /* Define conteúdo vazio para o pseudo-elemento */
+    position: fixed; /* Define posição fixa */
+    background: #040404 url('https://i.pinimg.com/originals/d4/ae/74/d4ae745535b8d9df951247bf91416f76.jpg') top right no-repeat; /* Define o fundo preto com a imagem */
+    background-size: cover; /* Ajusta a imagem para cobrir toda a área do elemento */
+    left: 0; /* Define a posição à esquerda */
+    right: 0; /* Define a posição à direita */
+    top: 0; /* Define a posição no topo */
+    height: 100vh; /* Define a altura para cobrir toda a altura da visualização */
+    z-index: -1; /* Define z-index para manter o pseudo-elemento atrás do conteúdo principal */
 }
