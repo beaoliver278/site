@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aula 5: Semáforo com Arduino</title>
+    <title>Aula 5</title>
     <style>
         /* Estilização personalizada */
         body {
@@ -38,26 +38,15 @@
     </style>
 </head>
 <body>
-    <h1>Aula 5: Semáforo com Arduino</h1>
+    <h1>Semáforo com Arduino</h1>
     
-    <p>O objetivo desta aula é montar um circuito de semáforo com o Arduino, protoboard, 6 LEDs nas cores verde, amarelo e vermelho, além de jumpers e resistores. Vamos programar o Arduino para controlar os LEDs de forma a simular o funcionamento de um semáforo.</p>
+    <p>Nesta aula, usamos o Tinkercad para montar um semáforo com Arduino, protoboard, 6 LEDs (2 verdes, 2 amarelos e 2 vermelhos) e resistores de 220 ohms tanto de forma física quanto virtual no Tinkercad. Conectamos os LEDs à protoboard e os ligamos aos pinos digitais do Arduino. Programamos o Arduino em blocos no Tinkercad para controlar os LEDs, alternando-os em ciclos de verde, amarelo e vermelho para simular dois semáforos funcionando simultaneamente.</p>                        
 
     <h2>Materiais</h2>
     <ul>
-        <li>Arduino (por exemplo, Arduino Uno)</li>
-        <li>Protoboard</li>
-        <li>2 LEDs vermelhos</li>
-        <li>2 LEDs amarelos</li>
-        <li>2 LEDs verdes</li>
-        <li>Resistores de 220 ohms (um para cada LED)</li>
-        <li>Jumpers</li>
-        <li>Cabo USB para conexão com o computador</li>
+        <li>Arduino Uno (simulado no Tinkercad)</li>
+        <li>Protoboard (simulada no Tinkercad)</li>
+        <li>2 LEDs verdes, 2 amarelos e 2 vermelhos</li>
+        <li>6 resistores de 220 ohms</li>
+        <li>Jumpers (simulados no Tinkercad)</li>
     </ul>
-
-    <h2>Montagem do Circuito</h2>
-    <ol>
-        <li><strong>Conecte os LEDs:</strong> Conecte os 6 LEDs à protoboard. Agrupe-os em dois conjuntos, cada um contendo um LED verde, um amarelo e um vermelho. Certifique-se de que os LEDs estão orientados corretamente, com o terminal mais longo (ânodo) conectado aos pinos de saída do Arduino.</li>
-        <li><strong>Conecte os resistores:</strong> Conecte um resistor de 220 ohms em série com cada LED. Conecte a outra extremidade de cada resistor a um pino digital do Arduino.</li>
-        <li><strong>Conecte os jumpers:</strong> Use jumpers para conectar cada LED ao pino digital do Arduino.</li>
-        <li><strong>Conecte o terra:</strong> Conecte todos os terminais negativos (cátodo) dos LEDs a um único ponto na protoboard. Conecte este ponto ao pino GND do Arduino.</li>
-    </ol>
