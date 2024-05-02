@@ -37,16 +37,22 @@
             color: #c7254e;
         }
 
-        /* Estilo para imagens e o vídeo */
-        img {
-            width: 400px; /* Define a largura das imagens para 400 pixels */
-            height: auto; /* Mantém a proporção das imagens */
+        /* Estilo para as imagens e o vídeo */
+        img, iframe {
+            width: 100%; /* Define a largura para 100% do contêiner */
+            height: auto; /* Mantém a proporção das imagens e do vídeo */
         }
-
-        /* Estilo para o vídeo */
-        iframe {
-            width: 800px; /* Define a largura do vídeo */
-            height: 450px; /* Define a altura do vídeo */
+        
+        /* Estilos para telas menores */
+        @media (max-width: 600px) {
+            /* Reduz a margem em telas menores */
+            body {
+                margin: 10px;
+            }
+            /* Reduz o tamanho dos títulos */
+            h1, h2, h3 {
+                font-size: 1.5rem;
+            }
         }
     </style>
 </head>
@@ -57,15 +63,15 @@
 
     <h2>Circuito Virtual</h2>
     <p>Imagem do circuito virtual do site Tinkercad:</p>
-    <img src="https://i.pinimg.com/736x/e9/92/9b/e9929b8f840fe3cc8ac6edf6c47cd082.jpg" width="400">
+    <img src="https://i.pinimg.com/736x/e9/92/9b/e9929b8f840fe3cc8ac6edf6c47cd082.jpg" alt="Circuito Virtual" width="100%">
 
     <h2>Código em Blocos</h2>
     <p>Imagem do código em blocos do site Tinkercad:</p>
-    <img src="https://i.pinimg.com/736x/8c/fa/25/8cfa259ee6181db7c27b6ffbb6200c97.jpg" width="400">
+    <img src="https://i.pinimg.com/736x/8c/fa/25/8cfa259ee6181db7c27b6ffbb6200c97.jpg" alt="Código em Blocos" width="100%">
 
     <h2>Vídeo da Simulação do Semáforo</h2>
-    <iframe width="800" height="450" src="https://www.youtube.com/embed/veWZmRSGOHU" allowfullscreen></iframe>
-
+    <iframe src="https://www.youtube.com/embed/veWZmRSGOHU" allowfullscreen></iframe>
 </body>
 </html>
+
 
