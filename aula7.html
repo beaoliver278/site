@@ -1,21 +1,104 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-br">
 <head>
-    <title>Circuitos Digitais</title>
+    <meta charset="UTF-8">
+    <title>Aula de Circuitos Digitais e Introdução à Linguagem C#</title>
     <style>
-        /* Estilo global */
         body {
             font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            text-align: center; /* Centraliza o texto de todos os elementos filhos */
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
         }
-        /* Estilo para iframe */
-        iframe {
-            width: 100%;
-            height: 450px;
-            border: none;
+        h1 {
+            color: #333;
+            text-align: center;
+        }
+        h2 {
+            color: #555;
+        }
+        p {
+            color: #666;
+        }
+        ul, ol {
+            color: #777;
+        }
+        pre {
+            background: #f9f9f9;
+            padding: 10px;
+            border: 1px solid #ddd;
+            overflow-x: auto;
+        }
+        code {
+            font-family: monospace;
+            color: #333;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 20px auto;
         }
     </style>
 </head>
 <body>
+    <h1>Aula de Circuitos Digitais e Introdução à Linguagem C#</h1>
+    
+    <h2>Circuitos Digitais:</h2>
+    <p>Nesta aula, vamos explorar os fundamentos dos circuitos digitais e introduzir conceitos básicos da linguagem C#.</p>
+    
+    <h3>Portas Lógicas e Fórmulas:</h3>
+    <p>Veja abaixo as imagens das portas lógicas e suas respectivas fórmulas:</p>
+    
+    <div>
+        <img src="caminho_para_imagem_AND.png" alt="Porta AND">
+        <p>Fórmula da Porta AND: A.B</p>
+    </div>
+    
+    <div>
+        <img src="caminho_para_imagem_OR.png" alt="Porta OR">
+        <p>Fórmula da Porta OR: A + B</p>
+    </div>
+    
+    <div>
+        <img src="caminho_para_imagem_NOT.png" alt="Porta NOT">
+        <p>Fórmula da Porta NOT: ~A</p>
+    </div>
+    
+    <h2>Introdução à Linguagem C#:</h2>
+    <p>Vamos também dar os primeiros passos na linguagem C#, criando um circuito simples com Arduino.</p>
+    
+    <h3>Código Exemplo:</h3>
+    <pre>
+        <code>
+            /*
+            -----------------------------
+            Nome: Beatriz Oliveira      -               
+            Itinerário de Robótica      -
+            Curso de Arduino            -
+            Edusesc Taguatinga Norte    -
+            -----------------------------
+            */
+
+            // Declaração de Variáveis e Constantes
+            const int LED = 13;
+
+            // Configurações
+            void setup(){
+                pinMode(LED, OUTPUT);
+            }
+
+            // Repetições
+            void loop(){
+                digitalWrite(LED, HIGH);
+                delay(1000); // 1 segundo
+
+                digitalWrite(LED, LOW);
+                delay(1000); // 1 segundo
+            }
+        </code>
+    </pre>
+    
+    <p>Esta aula proporcionará uma base sólida em circuitos digitais e programação em C#, preparando você para explorar mais a fundo esses conceitos.</p>
+</body>
+</html>
