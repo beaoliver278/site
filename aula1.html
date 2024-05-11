@@ -21,8 +21,11 @@
 
         #imagem img {
             width: 100%; /* Garantir que a imagem ocupe toda a largura da seção de imagem */
-            height: 100%; /* Garantir que a imagem ocupe toda a altura da seção de imagem */
+            height: auto; /* Permitir que a altura da imagem seja ajustada automaticamente */
             object-fit: cover; /* Cobrir toda a área da imagem */
+            position: relative; /* Posição relativa para permitir ajustes */
+            top: 50%; /* Posicionar a metade da altura da imagem do topo */
+            transform: translateY(-50%); /* Ajustar a posição vertical para centralizar a imagem */
         }
 
         /* Estilos para o título */
