@@ -15,7 +15,7 @@
         #imagem {
             position: relative; /* Definir a posição relativa para que o título possa ser posicionado absolutamente em relação a este elemento */
             width: 100%; /* Garantir que a imagem ocupe toda a largura da tela */
-            height: 100vh; /* Altura igual à altura da janela de visualização */
+            height: calc(100vh - 50px); /* Altura igual à altura da janela de visualização menos a altura do menu */
             overflow: hidden; /* Esconder qualquer conteúdo que ultrapasse os limites da seção de imagem */
         }
 
@@ -24,17 +24,14 @@
             height: 100%; /* Garantir que a imagem ocupe toda a altura da seção de imagem */
             object-fit: cover; /* Cobrir toda a área da imagem */
             position: absolute; /* Posicionamento absoluto em relação à seção de imagem */
-            top: 50px; /* Afastar a imagem um pouco para baixo */
+            top: 50px; /* Afastar a imagem um pouco mais para baixo, abaixo do menu */
             left: 0;
             z-index: -1; /* Colocar a imagem abaixo do título */
         }
 
         /* Estilos para o título */
         #titulo {
-            position: absolute; /* Posicionamento absoluto em relação à seção de imagem */
-            top: 10px; /* Posicionar o título abaixo do menu */
-            left: 50%; /* Centralizar o título horizontalmente */
-            transform: translateX(-50%); /* Centralizar o título horizontalmente */
+            position: relative; /* Posicionamento relativo em relação à seção de imagem */
             color: white; /* Cor do texto branca */
             font-size: 36px; /* Tamanho da fonte */
             font-weight: bold; /* Negrito */
@@ -66,4 +63,5 @@
     </footer>
 </body>
 </html>
+
 
