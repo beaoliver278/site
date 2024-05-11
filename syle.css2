@@ -1,11 +1,1 @@
-body::before {
-  content: "";
-  position: fixed;
-  background: #040404 url https://i.pinimg.com/originals/d4/ae/74/d4ae745535b8d9df951247bf91416f76.jpg top right no-repeat;
-  background-size: cover;
-  left: 0;
-  right: 0;
-  top: 0;
-  height: 100vh;
-  z-index: -1;
-}
+
