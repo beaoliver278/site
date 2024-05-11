@@ -20,15 +20,16 @@
             object-fit: cover; /* Para garantir que a imagem cubra completamente o contêiner */
         }
         #titulo {
-            position: absolute; /* Posição absoluta em relação ao body */
-            top: 50%; /* Alinhar o título no meio verticalmente */
+            position: absolute; /* Posicionamento absoluto em relação ao body */
+            top: 0; /* Alinhar o título ao topo da página */
             left: 50%; /* Alinhar o título no meio horizontalmente */
-            transform: translate(-50%, -50%); /* Centralizar o título */
+            transform: translateX(-50%); /* Centralizar o título horizontalmente */
+            background-color: rgba(255, 255, 255, 0.7); /* Cor de fundo semi-transparente */
+            padding: 10px; /* Espaçamento interno */
             color: black; /* Cor do texto */
-            text-align: center; /* Alinhar o texto ao centro */
-            font-size: 36px; /* Tamanho da fonte */
+            font-size: 24px; /* Tamanho da fonte */
             font-weight: bold; /* Negrito */
-            text-shadow: 2px 2px 4px rgba(0,0,0,0.5); /* Sombra do texto */
+            text-align: center; /* Alinhar o texto ao centro */
         }
     </style>
 </head>
@@ -43,11 +44,11 @@
         </nav>  
     </section>   
 
-    <!-- Imagem do teste de QI de Einstein cobrindo toda a página -->
-    <img src="https://i.pinimg.com/736x/4b/1b/09/4b1b095e1d1281c44f7544fa10c105d4.jpg" alt="Teste de QI de Einstein">
-    
     <!-- Título sobre a imagem -->
     <h1 id="titulo">Teste de QI de Einstein</h1>
+
+    <!-- Imagem do teste de QI de Einstein cobrindo toda a página -->
+    <img src="https://i.pinimg.com/736x/95/de/9c/95de9c37f933f20de2b11db374a8f2c7.jpg" alt="Teste de QI de Einstein">
 
     <footer>
         <p>© Beatriz Pinho</p>
@@ -56,3 +57,4 @@
     </footer>
 </body>
 </html>
+
