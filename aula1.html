@@ -21,6 +21,7 @@
             position: absolute; /* Posicionamento absoluto em relação à seção de imagem */
             top: 0;
             left: 0;
+            z-index: -1; /* Colocar a imagem abaixo do título */
         }
 
         /* Estilos para o título */
@@ -33,7 +34,7 @@
             font-size: 36px; /* Tamanho da fonte */
             font-weight: bold; /* Negrito */
             text-align: center; /* Alinhar o texto ao centro */
-            z-index: 1; /* Colocar na frente do fundo da imagem */
+            z-index: 1; /* Colocar o título acima da imagem */
         }
     </style>
 </head>
@@ -42,7 +43,7 @@
         <nav>
             <ul>
                 <li><a href="index.html">Início</a></li>
-                <li><a href="portifolio.html">Portifólio</a></li>
+                <li><a href="portifolio.html">Portfólio</a></li>
                 <li><a href="caderno_digital.html">Caderno Digital</a></li>
             </ul>    
         </nav>  
