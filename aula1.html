@@ -10,25 +10,30 @@
         #imagem {
             position: relative; /* Definir a posição relativa para que o título possa ser posicionado absolutamente em relação a este elemento */
             width: 100%; /* Garantir que a imagem ocupe toda a largura da tela */
-            height: auto; /* Permitir que a altura da imagem seja ajustada automaticamente para manter a proporção original */
+            height: 100vh; /* Altura igual à altura da janela de visualização */
             overflow: hidden; /* Esconder qualquer conteúdo que ultrapasse os limites da seção de imagem */
         }
+
         #imagem img {
             width: 100%; /* Garantir que a imagem ocupe toda a largura da seção de imagem */
-            height: auto; /* Permitir que a altura da imagem seja ajustada automaticamente para manter a proporção original */
-            display: block; /* Garantir que a imagem seja tratada como um bloco para corrigir problemas de alinhamento */
-            position: relative; /* Garantir que a imagem seja posicionada corretamente em relação à seção de imagem */
+            height: 100%; /* Garantir que a imagem ocupe toda a altura da seção de imagem */
+            object-fit: cover; /* Cobrir toda a área da imagem */
+            position: absolute; /* Posicionamento absoluto em relação à seção de imagem */
+            top: 0;
+            left: 0;
         }
+
         /* Estilos para o título */
         #titulo {
             position: absolute; /* Posicionamento absoluto em relação à seção de imagem */
             top: 50%; /* Alinhar o título verticalmente no meio da seção de imagem */
             left: 50%; /* Alinhar o título horizontalmente no meio da seção de imagem */
             transform: translate(-50%, -50%); /* Centralizar o título */
-            color: black; /* Cor do texto preta */
+            color: white; /* Cor do texto branca */
             font-size: 36px; /* Tamanho da fonte */
             font-weight: bold; /* Negrito */
             text-align: center; /* Alinhar o texto ao centro */
+            z-index: 1; /* Colocar na frente do fundo da imagem */
         }
     </style>
 </head>
@@ -43,10 +48,10 @@
         </nav>  
     </section>   
     
-   <h1 id="titulo">Teste de QI de Einstein</h1>
-
-    <!-- Imagem do teste de QI de Einstein cobrindo toda a página -->
-    <img src="https://i.pinimg.com/originals/87/96/fa/8796fad3ce8cb9971963d7d58817c116.png" alt="Teste de QI de Einstein">
+    <div id="imagem">
+        <img src="https://i.pinimg.com/originals/87/96/fa/8796fad3ce8cb9971963d7d58817c116.png" alt="Teste de QI de Einstein">
+        <h1 id="titulo">Teste de QI de Einstein</h1>
+    </div>
 
     <footer>
         <p>© Beatriz Pinho</p>
