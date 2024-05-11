@@ -6,11 +6,16 @@
     <title>Início</title>
     <link rel="stylesheet" type="text/css" href="style.css">
     <style>
+        /* Estilos para o menu */
+        #menu {
+            margin-bottom: 20px; /* Adicionar um espaço abaixo do menu */
+        }
+
         /* Estilos para a seção de imagem */
         #imagem {
             position: relative; /* Definir a posição relativa para que o título possa ser posicionado absolutamente em relação a este elemento */
             width: 100%; /* Garantir que a imagem ocupe toda a largura da tela */
-            height: 100vh; /* Altura igual à altura da janela de visualização */
+            height: 100%; /* Altura igual à altura da janela de visualização */
             overflow: hidden; /* Esconder qualquer conteúdo que ultrapasse os limites da seção de imagem */
         }
 
@@ -27,17 +32,12 @@
         /* Estilos para o título */
         #titulo {
             position: relative; /* Posicionamento relativo em relação à seção de imagem */
-            top: -50px; /* Afastar o título para cima */
+            top: 10px; /* Afastar o título para cima */
             color: white; /* Cor do texto branca */
             font-size: 36px; /* Tamanho da fonte */
             font-weight: bold; /* Negrito */
             text-align: center; /* Alinhar o texto ao centro */
             z-index: 1; /* Colocar o título acima da imagem */
-        }
-
-        /* Estilos para o menu */
-        #menu {
-            margin-bottom: 20px; /* Adicionar um espaço abaixo do menu */
         }
     </style>
 </head>
@@ -52,10 +52,10 @@
         </nav>  
     </section>   
 
-    <h1 id="titulo">Teste de QI de Einstein</h1>
     <div id="imagem">
         <img src="https://i.pinimg.com/736x/2d/b6/14/2db61443db878e75fc4408205ac9e52b.jpg" alt="Teste de QI de Einstein">      
     </div>
+    <h1 id="titulo">Teste de QI de Einstein</h1>
 
     <footer>
         <p>© Beatriz Pinho</p>
@@ -64,4 +64,5 @@
     </footer>
 </body>
 </html>
+
 
