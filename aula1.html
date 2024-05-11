@@ -15,18 +15,17 @@
         #imagem {
             position: relative; /* Definir a posição relativa para que o título possa ser posicionado absolutamente em relação a este elemento */
             width: 100%; /* Garantir que a imagem ocupe toda a largura da tela */
-            height: 60vh; /* Altura igual a 60% da altura da janela de visualização por padrão */
+            height: 100vh; /* Altura igual à altura da janela de visualização */
             overflow: hidden; /* Esconder qualquer conteúdo que ultrapasse os limites da seção de imagem */
         }
 
         #imagem img {
             width: 100%; /* Garantir que a imagem ocupe toda a largura da seção de imagem */
-            height: auto; /* Permitir que a altura da imagem seja ajustada automaticamente */
+            height: 100%; /* Garantir que a imagem ocupe toda a altura da seção de imagem */
             object-fit: cover; /* Cobrir toda a área da imagem */
             position: absolute; /* Posição absoluta para preencher completamente a área de imagem */
-            top: 50%; /* Posicionar a metade da altura da imagem do topo */
+            top: 0; /* Posicionar a partir da extremidade superior */
             left: 0; /* Posicionar a partir da extremidade esquerda */
-            transform: translateY(-50%); /* Ajustar a posição vertical para centralizar a imagem */
         }
 
         /* Estilos para o título */
@@ -38,13 +37,6 @@
             text-align: center; /* Alinhar o texto ao centro */
             margin: 0; /* Remover todas as margens */
             z-index: 1; /* Colocar o título acima da imagem */
-        }
-
-        /* Media query para dispositivos com largura de tela menor que 768px (como tablets e smartphones) */
-        @media screen and (max-width: 768px) {
-            #imagem {
-                height: 40vh; /* Reduzir a altura para 40% da altura da janela de visualização */
-            }
         }
     </style>
 </head>
@@ -72,6 +64,3 @@
     </footer>
 </body>
 </html>
-
-
-
