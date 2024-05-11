@@ -10,7 +10,7 @@
         #imagem {
             position: relative; /* Definir a posição relativa para que o título possa ser posicionado absolutamente em relação a este elemento */
             width: 100%; /* Garantir que a imagem ocupe toda a largura da tela */
-            height: 100vh; /* Altura igual à altura da janela de visualização */
+            height: 70vh; /* Altura igual à altura da janela de visualização */
             overflow: hidden; /* Esconder qualquer conteúdo que ultrapasse os limites da seção de imagem */
         }
 
@@ -26,10 +26,8 @@
 
         /* Estilos para o título */
         #titulo {
-            position: absolute; /* Posicionamento absoluto em relação à seção de imagem */
-            top: 50%; /* Alinhar o título verticalmente no meio da seção de imagem */
-            left: 50%; /* Alinhar o título horizontalmente no meio da seção de imagem */
-            transform: translate(-50%, -50%); /* Centralizar o título */
+            position: relative; /* Posicionamento relativo em relação à seção de imagem */
+            top: -50px; /* Afastar o título para cima */
             color: black; /* Cor do texto preta */
             font-size: 36px; /* Tamanho da fonte */
             font-weight: bold; /* Negrito */
@@ -61,3 +59,4 @@
     </footer>
 </body>
 </html>
+
