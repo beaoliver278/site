@@ -6,29 +6,29 @@
     <title>Início</title>
     <link rel="stylesheet" type="text/css" href="style.css">
     <style>
-        /* Estilos para a imagem cobrir toda a página */
-        body, html {
-            margin: 0;
-            padding: 0;
-            width: 100%;
-            height: 100%;
-            position: relative; /* Definir a posição relativa para que os elementos filhos possam ser posicionados relativamente a ele */
+        /* Estilos para a seção de imagem */
+        #imagem {
+            position: relative; /* Definir a posição relativa para que o título possa ser posicionado absolutamente em relação a este elemento */
+            width: 100%; /* Garantir que a imagem ocupe toda a largura da tela */
+            height: auto; /* Permitir que a altura da imagem seja ajustada automaticamente para manter a proporção original */
+            overflow: hidden; /* Esconder qualquer conteúdo que ultrapasse os limites da seção de imagem */
         }
-        img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover; /* Para garantir que a imagem cubra completamente o contêiner */
+        #imagem img {
+            width: 100%; /* Garantir que a imagem ocupe toda a largura da seção de imagem */
+            height: auto; /* Permitir que a altura da imagem seja ajustada automaticamente para manter a proporção original */
+            display: block; /* Garantir que a imagem seja tratada como um bloco para corrigir problemas de alinhamento */
+            position: relative; /* Garantir que a imagem seja posicionada corretamente em relação à seção de imagem */
         }
+        /* Estilos para o título */
         #titulo {
-            position: absolute; /* Posicionamento absoluto em relação ao body */
-            top: 20px; /* Alinhar o título a 20 pixels do topo da página */
-            left: 50%; /* Alinhar o título no meio horizontalmente */
-            transform: translateX(-50%); /* Centralizar o título horizontalmente */
+            position: absolute; /* Posicionamento absoluto em relação à seção de imagem */
+            top: 50%; /* Alinhar o título verticalmente no meio da seção de imagem */
+            left: 50%; /* Alinhar o título horizontalmente no meio da seção de imagem */
+            transform: translate(-50%, -50%); /* Centralizar o título */
             color: black; /* Cor do texto preta */
             font-size: 36px; /* Tamanho da fonte */
             font-weight: bold; /* Negrito */
             text-align: center; /* Alinhar o texto ao centro */
-            z-index: 1; /* Certifique-se de que o título esteja acima da imagem */
         }
     </style>
 </head>
@@ -43,10 +43,12 @@
         </nav>  
     </section>   
 
-    <h1 id="titulo">Teste de QI de Einstein</h1>
-
-    <!-- Imagem do teste de QI de Einstein cobrindo toda a página -->
-    <img src="https://i.pinimg.com/originals/87/96/fa/8796fad3ce8cb9971963d7d58817c116.png" alt="Teste de QI de Einstein">
+    <!-- Seção de imagem -->
+    <div id="imagem">
+        <img src="https://i.pinimg.com/736x/af/4a/11/af4a1112b041679ac82d79a4e123fd49.jpg" alt="Teste de QI de Einstein">
+        <!-- Título sobre a imagem -->
+        <h1 id="titulo">Teste de QI de Einstein</h1>
+    </div>
 
     <footer>
         <p>© Beatriz Pinho</p>
@@ -55,4 +57,3 @@
     </footer>
 </body>
 </html>
-
