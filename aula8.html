@@ -48,5 +48,104 @@
     </style>
 </head>
 <body>
-    <h1>Entradas</h1>
-   <p>Nesta aula, vamos abordar como utilizar uma protoboard, Arduino, cabos, LED, resistores e energia para criar um circuito que controla um LED com base na luminosidade ambiente, utilizando o código fornecido no Arduino IDE.</p>
+    <div class="content">
+        <h1>Aula de Robótica - Entradas</h1>
+        
+        <h2>Momento 1: Circuitos das Portas Lógicas AND, OR e NOT</h2>
+        <p>Na primeira parte da aula, montamos circuitos utilizando portas lógicas AND, OR e NOT. Utilizamos dois botões como entradas e um LED como saída para cada circuito. Testamos cada circuito de acordo com suas respectivas tabelas verdade, gerando um vídeo para cada porta lógica:</p>
+        
+        <div class="video-container">
+            <h3>Vídeo Porta Lógica AND</h3>
+            <video width="600" controls>
+                <source src="video_and.mp4" type="video/mp4">
+                Seu navegador não suporta o elemento de vídeo.
+            </video>
+        </div>
+
+        <div class="video-container">
+            <h3>Vídeo Porta Lógica OR</h3>
+            <video width="600" controls>
+                <source src="video_or.mp4" type="video/mp4">
+                Seu navegador não suporta o elemento de vídeo.
+            </video>
+        </div>
+
+        <div class="video-container">
+            <h3>Vídeo Porta Lógica NOT</h3>
+            <video width="600" controls>
+                <source src="video_not.mp4" type="video/mp4">
+                Seu navegador não suporta o elemento de vídeo.
+            </video>
+        </div>
+
+        <h2>Momento 2: Circuito com LDR e LED</h2>
+        <p>Na segunda parte da aula, montamos um circuito elétrico que utiliza um sensor de luz (LDR) como entrada e um LED como saída, processando o valor analógico no Arduino. Quando o valor lido pelo LDR ultrapassa um determinado limiar, o LED acende.</p>
+
+        <div class="video-container">
+            <h3>Vídeo do Circuito com LDR</h3>
+            <video width="600" controls>
+                <source src="video_ldr.mp4" type="video/mp4">
+                Seu navegador não suporta o elemento de vídeo.
+            </video>
+        </div>
+
+        <h2>Código Utilizado no Arduino</h2>
+        <p>Segue abaixo o código utilizado para a montagem do circuito com LDR e LED:</p>
+        
+        <div class="code-block">
+            <pre>
+/***************************
+ * Edusesc Taguatinga      *
+ * Professor: Wendell      *
+ * Nome: Beatriz Oliveira  *
+ * Itinerário de robótica  *
+ **************************/
+
+// Declaração de Variáveis e Constantes
+const int LED = 13;
+int LDR = A0;
+
+// Configurações
+void setup() {
+  pinMode(LED, OUTPUT);
+  pinMode(LDR, INPUT);
+  Serial.begin(9600);
+}
+
+// Repetições
+void loop() {
+  int luz = analogRead(LDR);
+  Serial.println(luz);
+
+  if (luz > 500) {
+    digitalWrite(LED, HIGH);
+  } else {
+    digitalWrite(LED, LOW);
+  }
+}
+            </pre>
+        </div>
+
+        <h2>Imagens dos Circuitos</h2>
+        <div class="circuit-image">
+            <h3>Imagem Circuito Porta Lógica AND</h3>
+            <img src="imagem_and.jpg" alt="Circuito Porta Lógica AND" width="600">
+        </div>
+
+        <div class="circuit-image">
+            <h3>Imagem Circuito Porta Lógica OR</h3>
+            <img src="imagem_or.jpg" alt="Circuito Porta Lógica OR" width="600">
+        </div>
+
+        <div class="circuit-image">
+            <h3>Imagem Circuito Porta Lógica NOT</h3>
+            <img src="imagem_not.jpg" alt="Circuito Porta Lógica NOT" width="600">
+        </div>
+
+        <div class="circuit-image">
+            <h3>Imagem Circuito com LDR</h3>
+            <img src="imagem_ldr.jpg" alt="Circuito com LDR" width="600">
+        </div>
+    </div>
+</body>
+</html>
