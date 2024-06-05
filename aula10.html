@@ -56,17 +56,28 @@
             pointer-events: none;
             z-index: -1;
         }
+        .star {
+            position: absolute;
+            width: 2px;
+            height: 2px;
+            background: #FFF;
+            border-radius: 50%;
+        }
     </style>
 </head>
 <body>
     <div class="stars">
-        <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-            <polygon fill="#FFF" points="50,15 53,24 62,24 55,30 57,39 50,33 43,39 45,30 38,24 47,24"></polygon>
-            <polygon fill="#FFF" points="50,30 48,35 56,35 49,39 51,45 50,42 49,45 51,39 44,35 52,35"></polygon>
-            <polygon fill="#FFF" points="50,45 43,50 51,50 46,53 47,60 50,57 53,60 54,53 49,50 57,50"></polygon>
-            <polygon fill="#FFF" points="50,60 38,64 47,64 42,68 42,74 50,71 58,74 58,68 53,64 62,64"></polygon>
-            <polygon fill="#FFF" points="50,75 33,78 45,78 40,81 40,86 50,83 60,86 60,81 55,78 67,78"></polygon>
-        </svg>
+        <!-- Star 1 -->
+        <div class="star" style="top: 20%; left: 40%;"></div>
+        <!-- Star 2 -->
+        <div class="star" style="top: 70%; left: 80%;"></div>
+        <!-- Star 3 -->
+        <div class="star" style="top: 50%; left: 20%;"></div>
+        <!-- Star 4 -->
+        <div class="star" style="top: 80%; left: 60%;"></div>
+        <!-- Star 5 -->
+        <div class="star" style="top: 10%; left: 90%;"></div>
+        <!-- Add more stars as needed -->
     </div>
     
     <div class="content">
