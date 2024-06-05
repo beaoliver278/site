@@ -3,32 +3,71 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mercado de Trabalho</title>
+    <title>Aula de Entradas</title>
     <style>
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             padding: 20px;
             line-height: 1.6;
-            background: linear-gradient(to bottom, #000000, #0d569f); /* Degradê de preto para azul escuro */
+            position: relative; /* Adicionando posição relativa para permitir o posicionamento absoluto das estrelas */
+            background: linear-gradient(to bottom, #000000, #0d569f); /* Gradiente do preto ao azul escuro */
+            color: #0d569f; /* Cor azul escuro para o texto */
         }
+        /* Estilo para as estrelas */
+        .stars {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1; /* Colocando atrás do conteúdo */
+            pointer-events: none; /* Para que não interfira com a interação do usuário */
+            background-image: url('https://i.ibb.co/NZ2kRPg/stars.png'); /* Imagem das estrelas */
+            animation: animateStars 50s linear infinite; /* Animação das estrelas */
+        }
+
+        /* Animação das estrelas */
+        @keyframes animateStars {
+            from {
+                background-position: 0 0; /* Início da animação */
+            }
+            to {
+                background-position: 100% 100%; /* Fim da animação */
+            }
+        }
+
+        /* Estilo para o conteúdo */
         .content {
             max-width: 800px;
             margin: 0 auto;
-            background-color: rgba(255, 255, 255, 0.8); /* Aumentando a transparência do fundo */
+            background-color: rgba(255, 255, 255, 0.8);
             padding: 20px;
             border-radius: 8px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            position: relative; /* Para que as estrelas não apareçam por cima do conteúdo */
+            z-index: 1; /* Para que o conteúdo fique acima das estrelas */
         }
+        
         h1, h2 {
-            color: #0d569f; /* Azul escuro */
             text-align: center;
             margin-bottom: 20px;
         }
+        
+        h1 {
+            font-size: 28px;
+            color: #0d569f; /* Cor azul escuro para os títulos */
+        }
+        
+        h2 {
+            font-size: 24px;
+            color: #0d569f; /* Cor azul escuro para os títulos */
+        }
+        
         p {
-            color: #525252;
             text-align: justify;
             margin-bottom: 20px;
         }
+        
         .video-container {
             position: relative;
             padding-bottom: 56.25%; /* 16:9 */
@@ -37,7 +76,9 @@
             max-width: 100%;
             background: #000;
             margin-bottom: 40px;
+            border-radius: 8px; /* Adicionando bordas arredondadas */
         }
+        
         .video-container iframe,
         .video-container object,
         .video-container embed {
@@ -46,44 +87,15 @@
             left: 0;
             width: 100%;
             height: 100%;
-        }
-        .stars {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            pointer-events: none;
-            z-index: -1;
+            border-radius: 8px; /* Adicionando bordas arredondadas */
         }
     </style>
 </head>
 <body>
-    <div class="stars">
-        <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-            <circle cx="10" cy="10" r="1" fill="#FFF"/>
-            <circle cx="30" cy="20" r="1" fill="#FFF"/>
-            <circle cx="50" cy="5" r="1" fill="#FFF"/>
-            <circle cx="70" cy="25" r="1" fill="#FFF"/>
-            <circle cx="90" cy="15" r="1" fill="#FFF"/>
-            <circle cx="15" cy="35" r="1" fill="#FFF"/>
-            <circle cx="35" cy="45" r="1" fill="#FFF"/>
-            <circle cx="55" cy="40" r="1" fill="#FFF"/>
-            <circle cx="75" cy="35" r="1" fill="#FFF"/>
-            <circle cx="95" cy="45" r="1" fill="#FFF"/>
-            <circle cx="10" cy="60" r="1" fill="#FFF"/>
-            <circle cx="30" cy="55" r="1" fill="#FFF"/>
-            <circle cx="50" cy="70" r="1" fill="#FFF"/>
-            <circle cx="70" cy="65" r="1" fill="#FFF"/>
-            <circle cx="90" cy="60" r="1" fill="#FFF"/>
-            <circle cx="15" cy="80" r="1" fill="#FFF"/>
-            <circle cx="35" cy="85" r="1" fill="#FFF"/>
-            <circle cx="55" cy="90" r="1" fill="#FFF"/>
-            <circle cx="75" cy="80" r="1" fill="#FFF"/>
-            <circle cx="95" cy="85" r="1" fill="#FFF"/>
-        </svg>
-    </div>
-    
+    <!-- Estrelas de fundo -->
+    <div class="stars"></div>
+
+    <!-- Conteúdo da página -->
     <div class="content">
         <h1>Mercado de Trabalho (Robótica)</h1>
         <p>A robótica está desempenhando um papel crucial na transformação de diversas indústrias, trazendo avanços significativos em termos de eficiência, segurança e inovação. Os robôs estão sendo aplicados em áreas como saúde, segurança, agricultura e manufatura, onde estão otimizando processos, aumentando a produtividade e melhorando a qualidade dos serviços. A seguir, apresentarei alguns vídeos que ilustram como a robótica está revolucionando diferentes setores do mercado de trabalho.</p>
