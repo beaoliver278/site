@@ -7,9 +7,7 @@
     <style>
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: linear-gradient(to bottom, #1E90FF, #000000); /* Gradiente de azul para preto */
-            background-size: cover;
-            background-repeat: no-repeat;
+            background: #0d569f; /* Azul escuro */
             padding: 20px;
             line-height: 1.6;
         }
@@ -21,14 +19,10 @@
             border-radius: 8px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
-        h1 {
-            color: #1E90FF; /* Azul */
+        h1, h2 {
+            color: #0d569f; /* Azul escuro */
             text-align: center;
             margin-bottom: 20px;
-        }
-        h2 {
-            color: #1E90FF; /* Azul */
-            margin-top: 30px;
         }
         p {
             color: #525252;
@@ -36,15 +30,22 @@
             margin-bottom: 20px;
         }
         .video-container {
-            text-align: center;
+            position: relative;
+            padding-bottom: 56.25%; /* 16:9 */
+            height: 0;
+            overflow: hidden;
+            max-width: 100%;
+            background: #000;
             margin-bottom: 40px;
         }
-        iframe {
-            border: none;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        .video-container iframe,
+        .video-container object,
+        .video-container embed {
+            position: absolute;
+            top: 0;
+            left: 0;
             width: 100%;
-            max-width: 560px;
+            height: 100%;
         }
     </style>
 </head>
@@ -56,34 +57,27 @@
         <h2>Esquadrão Antibomba (Polícia Federal)</h2>
         <p>O vídeo abaixo mostra o trabalho do esquadrão antibomba da Polícia Federal em uma operação no Jacarezinho, Rio de Janeiro. Utilizando robôs controlados remotamente, eles identificam e desarmam um artefato explosivo com precisão e cautela. A operação destaca a importância da tecnologia robótica na segurança pública e a eficácia da cooperação entre as forças de segurança.</p>
         <div class="video-container">
-             <iframe width="560" height="315" src="https://www.youtube.com/embed/khJLxZFsQMs?start=797" title="Esquadrão Antibomba (Polícia Federal)" frameborder="0" allowfullscreen></iframe>
+            <iframe src="https://www.youtube.com/embed/khJLxZFsQMs?start=797" title="Esquadrão Antibomba (Polícia Federal)" frameborder="0" allowfullscreen></iframe>
         </div>
         
         <h2>Cirurgias Remotas (Avanços na rede de Saúde)</h2>
         <p>O vídeo abaixo aborda os avanços da robótica na medicina, com foco em cirurgias remotas. Essa tecnologia permite que cirurgiões realizem procedimentos à distância, ampliando o acesso à saúde. Equipados com sistemas robóticos controlados remotamente, os cirurgiões podem executar tarefas delicadas com precisão. Essa inovação é crucial para áreas remotas, oferecendo atendimento de qualidade sem necessidade de deslocamento. A robótica está revolucionando os cuidados de saúde, tornando-os mais acessíveis, eficientes e salvando vidas.</p>
         <div class="video-container">
-             <iframe width="560" height="315" src="https://www.youtube.com/embed/J-Eh4MydwP8" title="Cirurgias Remotas (Avanços na rede de Saúde)" frameborder="0" allowfullscreen></iframe>
-         </div>  
+            <iframe src="https://www.youtube.com/embed/J-Eh4MydwP8" title="Cirurgias Remotas (Avanços na rede de Saúde)" frameborder="0" allowfullscreen></iframe>
+        </div>  
             
         <h2>Controle de Pragas, Plantil e Colheita (Agricultura)</h2>
         <p>O vídeo abaixo mostra como a robótica está revolucionando a agricultura, tornando-a mais sustentável e produtiva. Os sistemas robóticos automatizados permitem que os agricultores realizem tarefas de forma eficiente e precisa, aumentando a produtividade e reduzindo o impacto ambiental. Na agricultura, os robôs controlam pragas, realizam o plantio e a colheita de forma automatizada e seletiva, minimizando o uso de produtos químicos. Essa automação contribui para a redução do desperdício de recursos naturais e melhora a eficiência das operações agrícolas, atendendo à crescente demanda por alimentos.</p>
         <div class="video-container">
-             <iframe width="560" height="315" src="https://www.youtube.com/embed/rdt9z9CwMWU" title="Controle de Pragas, Plantil e Colheita (Agricultura)" frameborder="0" allowfullscreen></iframe>
-         </div>
+            <iframe src="https://www.youtube.com/embed/rdt9z9CwMWU" title="Controle de Pragas, Plantil e Colheita (Agricultura)" frameborder="0" allowfullscreen></iframe>
+        </div>
              
         <h2>Telepresença (Operadores de Máquinas Pesadas)</h2>
         <p>O vídeo abaixo mostra a telepresença, que permite que operadores controlem máquinas pesadas remotamente, melhorando a segurança e a eficiência em setores como mineração e construção. Equipamentos como escavadeiras são controlados à distância com tecnologias como câmeras de alta resolução e sensores de movimento, proporcionando uma experiência imersiva aos operadores. Isso reduz os riscos de acidentes em ambientes perigosos, aumentando a eficiência e a flexibilidade no trabalho, sem a necessidade de deslocamento físico. A tecnologia de telepresença está transformando a operação de máquinas pesadas, tornando-as mais seguras e produtivas.</p>
         <div class="video-container">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/tiwG2vO8pIs" title="Telepresença (Operadores de Máquinas Pesadas)" frameborder="0" allowfullscreen></iframe>
+            <iframe src="https://www.youtube.com/embed/tiwG2vO8pIs" title="Telepresença (Operadores de Máquinas Pesadas)" frameborder="0" allowfullscreen></iframe>
         </div>
             
-        <h2>Indústrias Autônomas (Montadoras, Fábricas)</h2>
-        <p>O vídeo abaixo mostra como a robótica na indústria automatiza processos de montagem, fabricação e controle de qualidade, aumentando a produtividade e eficiência. Robôs executam tarefas precisas e repetitivas, como soldagem e montagem, com maior velocidade e consistência do que os humanos. Sensores avançados melhoram o controle de qualidade, reduzindo retrabalho e desperdício. A automação também aumenta a segurança, substituindo tarefas perigosas. A robótica está revolucionando a indústria, tornando-a mais eficiente, precisa e segura.</p>
-        <div class="video-container">
-             <iframe width="560" height="315" src="https://www.youtube.com/embed/yzryfjdEb9I" title="Indústrias Autônomas (Montadoras, Fábricas)" frameborder="0" allowfullscreen></iframe>
-         </div>
-   </div>
+        </div>
 </body>
 </html>
-
-        
