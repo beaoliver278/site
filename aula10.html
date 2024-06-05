@@ -9,34 +9,31 @@
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             padding: 20px;
             line-height: 1.6;
-            position: relative; /* Adicionando posição relativa para permitir o posicionamento absoluto das estrelas */
-            background: linear-gradient(to bottom, #0d569f, #000000); /* Gradiente de azul escuro para preto */
-            color: #ffffff; /* Cor branca para o texto */
+            position: relative;
+            background: linear-gradient(to bottom, #0d569f, #000000);
+            color: #ffffff;
         }
-        /* Estilo para as estrelas */
         .stars {
             position: fixed;
             top: 0;
             left: 0;
             width: 100%;
             height: 100%;
-            z-index: -1; /* Colocando atrás do conteúdo */
-            pointer-events: none; /* Para que não interfira com a interação do usuário */
-            background-image: url('https://i.ibb.co/QFbPvzS/forme-a-ilustracao-interior-do-boutique-da-roupa-das-mulheres-e-venda-dos-vestidos-33099-786.jpg'); /* Imagem das estrelas */
-            animation: animateStars 50s linear infinite; /* Animação das estrelas */
+            z-index: -1;
+            pointer-events: none;
+            background-image: url('https://i.ibb.co/QFbPvzS/forme-a-ilustracao-interior-do-boutique-da-roupa-das-mulheres-e-venda-dos-vestidos-33099-786.jpg');
+            animation: animateStars 50s linear infinite;
         }
 
-        /* Animação das estrelas */
         @keyframes animateStars {
             from {
-                background-position: 0 0; /* Início da animação */
+                background-position: 0 0;
             }
             to {
-                background-position: 100% 100%; /* Fim da animação */
+                background-position: 100% 100%;
             }
         }
 
-        /* Estilo para o conteúdo */
         .content {
             max-width: 800px;
             margin: 0 auto;
@@ -44,8 +41,8 @@
             padding: 20px;
             border-radius: 8px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            position: relative; /* Para que as estrelas não apareçam por cima do conteúdo */
-            z-index: 1; /* Para que o conteúdo fique acima das estrelas */
+            position: relative;
+            z-index: 1;
         }
         
         h1, h2 {
@@ -55,12 +52,12 @@
         
         h1 {
             font-size: 28px;
-            color: #0d569f; /* Cor azul escuro para os títulos */
+            color: #0d569f;
         }
         
         h2 {
             font-size: 24px;
-            color: #0d569f; /* Cor azul escuro para os títulos */
+            color: #0d569f;
         }
         
         p {
@@ -76,7 +73,7 @@
             max-width: 100%;
             background: #000;
             margin-bottom: 40px;
-            border-radius: 8px; /* Adicionando bordas arredondadas */
+            border-radius: 8px;
         }
         
         .video-container iframe,
@@ -87,15 +84,12 @@
             left: 0;
             width: 100%;
             height: 100%;
-            border-radius: 8px; /* Adicionando bordas arredondadas */
+            border-radius: 8px;
         }
     </style>
 </head>
 <body>
-    <!-- Estrelas de fundo -->
     <div class="stars"></div>
-
-    <!-- Conteúdo da página -->
     <div class="content">
         <h1>Mercado de Trabalho (Robótica)</h1>
         <p>A robótica está desempenhando um papel crucial na transformação de diversas indústrias, trazendo avanços significativos em termos de eficiência, segurança e inovação. Os robôs estão sendo aplicados em áreas como saúde, segurança, agricultura e manufatura, onde estão otimizando processos, aumentando a produtividade e melhorando a qualidade dos serviços. A seguir, apresentarei alguns vídeos que ilustram como a robótica está revolucionando diferentes setores do mercado de trabalho.</p>
